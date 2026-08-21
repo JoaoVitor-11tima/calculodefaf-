@@ -1,11 +1,8 @@
-const botao = document.querySelector("btn-calcular");
-botao.addEventListener("click", calcularTroco);
-
 function calcularTroco() {
-    const inputPreco = document.querySelector("preco");
-    const inputQuantidade = document.querySelector("quantidade");
-    const inputDinheiro = document.querySelector("dinheiro");
-    const paragrafoResultado = document.querySelector("resultado");
+    const inputPreco = document.getElementById("preco");
+    const inputQuantidade = document.getElementById("quantidade");
+    const inputDinheiro = document.getElementById("dinheiro");
+    const paragrafoResultado = document.getElementById("resultado");
 
     let preco = Number(inputPreco.value);
     let quantidade = Number(inputQuantidade.value);
